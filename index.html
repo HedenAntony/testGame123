@@ -1,0 +1,28 @@
+<!DOCTYPE html><html><head>
+    <script src="p5.js"></script>
+    <script src="p5.dom.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+<script src="./p5.play.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+
+  </head>
+  <body>
+      <p>
+         X: <span id = "x-value"></span> 
+      </p>
+      <p>
+        Y: <span id = "y-value"></span> 
+     </p>
+    <script type= "text/javascript">
+
+        window.addEventListener('mousemove', function(e){
+            document.getElementById('x-value').textContent= e.x;
+            document.getElementById('y-value').textContent= e.y;
+        })
+    </script>
+
+      <script src="sketch.js"></script>
+  
+
+</body></html>
